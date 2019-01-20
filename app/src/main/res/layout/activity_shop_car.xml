@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".one.activity.ShopCarActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shopcar_one_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/goto_pay"
+        ></android.support.v7.widget.RecyclerView>
+
+    <CheckBox
+        android:id="@+id/shop_car_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/qxfx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全选/反选"
+        android:layout_toRightOf="@+id/shop_car_checked"
+        android:layout_alignBottom="@+id/shop_car_checked"
+        android:layout_marginBottom="8dp"
+        />
+    <TextView
+        android:id="@+id/shop_price"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/qxfx"
+        android:layout_alignBottom="@+id/qxfx"
+        android:layout_marginLeft="10dp"
+        android:text="0.0"
+        android:textColor="#f00"
+        />
+    <TextView
+        android:id="@+id/goto_pay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="去结算(0)"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:background="#ff6600"
+        android:textColor="#fff"
+        />
+
+</RelativeLayout>

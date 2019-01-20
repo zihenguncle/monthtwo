@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simple"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:roundAsCircle="true"
+        app:placeholderImage="@drawable/t1"
+        />
+
+    <EditText
+        android:id="@+id/main_edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="手机号/会员号/邮箱"
+        android:layout_below="@+id/simple"
+        android:layout_marginTop="10dp"
+        android:text="15011100453"
+        />
+
+    <EditText
+        android:id="@+id/main_edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="请输入密码"
+        android:text="123456"
+        android:layout_below="@+id/main_edit_phone"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/text_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码"
+        android:layout_below="@+id/main_edit_pwd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_edit_pwd"
+        android:text="新用户注册"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/but_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="登录"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_below="@+id/text_forget"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/but_style"
+        />
+
+    <ImageView
+        android:id="@+id/qq_iamge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/umeng_socialize_qq"
+        android:layout_below="@+id/but_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+
+</RelativeLayout>

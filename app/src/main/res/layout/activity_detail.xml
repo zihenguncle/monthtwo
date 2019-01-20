@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity">
+
+   <tv.danmaku.ijk.media.widget.media.IjkVideoView
+       android:id="@+id/video"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"></tv.danmaku.ijk.media.widget.media.IjkVideoView>
+
+   <com.stx.xhb.xbanner.XBanner
+       android:id="@+id/xbanner"
+       android:layout_width="match_parent"
+       android:layout_height="260dp"
+       android:layout_below="@+id/video"
+       ></com.stx.xhb.xbanner.XBanner>
+   <TextView
+       android:id="@+id/title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/xbanner"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="10dp"
+       android:text="this is title"
+       />
+   <TextView
+       android:id="@+id/price"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/title"
+       android:layout_marginTop="10dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginLeft="20dp"
+       android:textColor="#f00"
+       android:text="this is price"
+       />
+   <Button
+       android:id="@+id/addcar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:text="加入购物车"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:background="@drawable/but_style"
+       />
+
+</RelativeLayout>
